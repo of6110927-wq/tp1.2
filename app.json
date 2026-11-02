@@ -3,10 +3,6 @@
     "name": "tp-1",
     "slug": "tp-1",
     "version": "1.0.0",
-    "entryPoint": "./src/App.js",
-    "experiments": {
-      "baseUrl": "/tp1.2"
-    },
     "web": {
       "bundler": "metro"
     }

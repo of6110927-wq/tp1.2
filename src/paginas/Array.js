@@ -1,4 +1,5 @@
 import React from "react";
+import { Asset } from "expo-asset";
 import MT03 from "../imagenes/images.jpg";
 import Twister from "../imagenes/descarga (1).jpg";
 import TRK502 from "../imagenes/descarga.jpg";
@@ -9,14 +10,14 @@ export const productosLocales = [
     nombre: "Yamaha MT 03",
     precio: "$11.199.000",
     categoria: "Deportiva",
-    imagen: MT03,
+    imagen: Asset.fromModule(MT03).uri,
   },
   {
     id: 2,
     nombre: "cb300 Twister",
     precio: "$7.850.000",
     categoria: "Ciudad",
-    imagen: Twister,
+    imagen: Asset.fromModule(Twister).uri,
   },
   {
     id: 3,
@@ -24,7 +25,7 @@ export const productosLocales = [
     nombre: "Benelli TRK 502",
     precio: "$14.510.000",
     categoria: "Viaje",
-    imagen: TRK502,
+    imagen: Asset.fromModule(TRK502).uri,
   },
 ];
 
