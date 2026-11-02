@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "react-native";
 import MT03 from "../imagenes/images.jpg";
 import Twister from "../imagenes/descarga (1).jpg";
 import TRK502 from "../imagenes/descarga.jpg";
@@ -34,7 +35,12 @@ export default function ArrayPagina() {
       <h2 className="titulo">Productos de Aspen</h2>
       {productosLocales.map((prod) => (
         <div key={prod.id} className="card">
-          <img src={prod.imagen} alt={prod.nombre} className="imagen" />
+          <Image
+            source={prod.imagen}
+            accessibilityLabel={prod.nombre}
+            resizeMode="contain"
+            style={{ width: 120, height: 120, marginBottom: 10, marginHorizontal: "auto" }}
+          />
           <p className="bold">{prod.nombre}</p>
           <p>Precio: {prod.precio}</p>
           <p>Categoria: {prod.categoria}</p>
