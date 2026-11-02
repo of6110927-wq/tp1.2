@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "entryPoint": "./src/App.js",
     "experiments": {
-      "baseUrl": "/TrabajoPractico1"
+      "baseUrl": "/tp1.2"
     },
     "web": {
       "bundler": "metro"
